@@ -40,7 +40,7 @@ Welcome to my GitHub profile! I'm an Electrical Engineering student specializing
 
 Here are the main repositories currently available on my profile:
 
-* **[B.Sc. Final Project: GC-eDRAM DRT Optimization (In Progress)](https://github.com/EyalSchiff/Final-Project):** My final year project focusing on optimizing Data Retention Time (DRT) for Gain-Cell embedded DRAM to improve energy efficiency. The project involves building Verilog behavioral models to emulate memory volatility and designing a smart, LUT-based adaptive refresh controller with multiplexing logic to significantly reduce static power consumption.
+* **[B.Sc. Final Project: GC-eDRAM DRT Optimization (In Progress)](https://github.com/EyalSchiff/Final-Project):** My final year project focusing on optimizing Data Retention Time (DRT) for Gain-Cell embedded DRAM to improve energy efficiency and maximize memory availability by reducing refresh downtime. The project involves building Verilog behavioral models to emulate memory volatility and designing a smart, LUT-based adaptive refresh controller with multiplexing logic to significantly reduce static power consumption.
 * **[Self-Verilog-Projects](https://github.com/EyalSchiff/Self-verilog-projects):** A collection of RTL designs and testbenches in Verilog. The flagship project in this repository is a **16-Entry Hardware Resource Allocator (Locker System)**. This system was systematically built from the ground up by reusing and integrating my previously implemented basic logic components (such as custom SR flip-flops, multiplexers, encoders, and decoders) into a fully functional, hierarchical architecture.
 
 *(More projects and architectural explorations will be added soon!)*
