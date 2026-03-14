@@ -41,8 +41,9 @@ Welcome to my GitHub profile! I'm an Electrical Engineering student specializing
 Here are the main repositories currently available on my profile:
 
 * **[B.Sc. Final Project: GC-eDRAM DRT Optimization (In Progress)](https://github.com/EyalSchiff/Final-Project):** My final year project focusing on optimizing Data Retention Time (DRT) for Gain-Cell embedded DRAM to improve energy efficiency and maximize memory availability by reducing refresh downtime. The project involves building Verilog behavioral models to emulate memory volatility and designing a smart, LUT-based adaptive refresh controller with multiplexing logic to significantly reduce static power consumption.
-* **[Self-Verilog-Projects](https://github.com/EyalSchiff/Self-verilog-projects):** A collection of RTL designs and testbenches in Verilog.
-    * **Flagship Project: 16-Entry Hardware Resource Allocator (Locker System):** This system was systematically built from the ground up by reusing and integrating my previously implemented basic logic components (such as custom SR flip-flops, multiplexers, encoders, and decoders) into a fully functional, hierarchical architecture.
+
+* **[Self-Verilog-Projects](https://github.com/EyalSchiff/Self-verilog-projects):** A comprehensive collection of RTL designs and verification environments.
+    * **16-Entry Hardware Resource Allocator (Locker System):** A complex hierarchical system designed and implemented from the ground up. The project started with the pre-planned design of fundamental building blocks (custom SR flip-flops, multiplexers, encoders, and decoders) which were then systematically integrated into a fully functional 16-bit architecture.
     * **FIFO8 - Structural vs. Behavioral Equivalence:** A 64-bit wide, 8-entry synchronous FIFO buffer implementation. This project demonstrates advanced verification by implementing the module in two distinct ways—high-level behavioral logic and gate-level structural design (using decoders, muxes, and register banks). A dedicated cross-verification testbench ensures 100% bit-accurate logical equivalence between the two models in real-time simulation.
 
 *(More projects and architectural explorations will be added soon!)*
