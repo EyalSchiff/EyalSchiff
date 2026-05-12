@@ -42,9 +42,14 @@ Here are the main repositories currently available on my profile:
 
 * **[B.Sc. Final Project: GC-eDRAM DRT Optimization (In Progress)](https://github.com/EyalSchiff/Final-Project):** My final year project focusing on optimizing Data Retention Time (DRT) for Gain-Cell embedded DRAM to improve energy efficiency and maximize memory availability by reducing refresh downtime. The project involves building Verilog behavioral models to emulate memory volatility and designing a smart, LUT-based adaptive refresh controller with multiplexing logic to significantly reduce static power consumption.
 
+
 * **[Self-Verilog-Projects](https://github.com/EyalSchiff/Self-verilog-projects):** A comprehensive collection of RTL designs and verification environments.
-    * **16-Entry Hardware Resource Allocator (Locker System):** A complex hierarchical system designed and implemented from the ground up. The project started with the pre-planned design of fundamental building blocks (custom SR flip-flops, multiplexers, encoders, and decoders) which were then systematically integrated into a fully functional 16-bit architecture.
-    * **FIFO8 - Structural vs. Behavioral Equivalence:** A 64-bit wide, 8-entry synchronous FIFO buffer implementation. This project demonstrates advanced verification by implementing the module in two distinct ways—high-level behavioral logic and gate-level structural design (using decoders, muxes, and register banks). A dedicated cross-verification testbench ensures 100% bit-accurate logical equivalence between the two models in real-time simulation.
+    * **16-Entry Hardware Resource Allocator (Locker System):** A complex hierarchical system designed and implemented from the ground up, integrating fundamental building blocks (SR flip-flops, muxes, encoders) into a fully functional 16-bit architecture.
+    * **FIFO8 - Structural vs. Behavioral Equivalence:** A 64-bit wide, 8-entry synchronous FIFO buffer implementation. Demonstrates advanced verification by ensuring 100% bit-accurate logical equivalence between behavioral and gate-level structural models.
+
+* **[RISCV-RTL2GDS: Physical Design Implementation](https://github.com/EyalSchiff/RISCV-RTL2GDS):** A complete RTL-to-GDSII Physical Design (PnR) flow implementation of a **Low-Power RISC-V SoC** core using **Cadence Innovus (TSMC 65nm)**.
+    * **The Flow:** Executed the full physical implementation cycle, including Floorplanning, Power Planning (Rings & Stripes), Standard Cell Placement, Clock Tree Synthesis (CTS), and Detailed Routing.
+    * **Signoff & Optimization:** Focused on Post-Route timing closure (Setup/Hold) and physical verification. Achieved a clean signoff with **zero DRC/Connectivity violations** and successful timing closure for the finalized layout.
 
 *(More projects and architectural explorations will be added soon!)*
 
