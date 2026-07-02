@@ -39,12 +39,11 @@ Welcome to my GitHub profile! I'm an Electrical Engineering graduate specializin
 ## 📂 Featured Projects
 
 Here are the main repositories currently available on my profile:
+    
+* **[B.Sc. Final Project: GC-eDRAM DRT Optimization](https://github.com/EyalSchiff/Final-Project):** My graduation project focusing on optimizing Data Retention Time (DRT) for Gain-Cell embedded DRAM to maximize memory availability and energy efficiency. Designed Verilog behavioral volatility models and implemented a smart, LUT-based adaptive refresh controller with multiplexing logic to dramatically reduce refresh downtime and static power leakage.
 
 * **[FPGA_Excellarator: HW/SW Co-Design CNN Accelerator](https://github.com/EyalSchiff/FPGA_Excellarator):** Design and rigorous cycle-accurate optimization of a full hardware acceleration subsystem for Convolutional Neural Networks (CNNs) tightly coupled with a custom RISC-V CPU. 
     * **The Breakthrough:** Slashed end-to-end simulation latency from **over 1,000,000 cycles (pure software baseline)** down to exactly **4,029 clock cycles**—achieving a **>250x hardware speedup**.
-    * **Architectural Concept:** Re-architected a半-serial Output-Stationary baseline into a highly parallel **Input-Stationary / Broadcast-MAC Array** with 32 parallel 32-bit accumulators. Unified memory streaming to rigid 32-byte physical strides paired with high-speed software memory padding (`memset`) to eliminate FSM handshake bubbles and maximize 256-bit bus throughput.
-
-* **[B.Sc. Final Project: GC-eDRAM DRT Optimization](https://github.com/EyalSchiff/Final-Project):** My graduation project focusing on optimizing Data Retention Time (DRT) for Gain-Cell embedded DRAM to maximize memory availability and energy efficiency. Designed Verilog behavioral volatility models and implemented a smart, LUT-based adaptive refresh controller with multiplexing logic to dramatically reduce refresh downtime and static power leakage.
 
 * **[Self-Verilog-Projects](https://github.com/EyalSchiff/Self-verilog-projects):** A comprehensive collection of structural RTL designs and custom verification environments.
     * **16-Entry Hardware Resource Allocator (Locker System):** Implemented a state-dependent, hierarchical resource allocator from scratch, integrating SR flip-flops, encoders, and multi-stage muxes under strict priorities where reset overrides simultaneous operations.
