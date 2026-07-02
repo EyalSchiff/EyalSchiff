@@ -7,15 +7,15 @@
   <img src="https://komarev.com/ghpvc/?username=EyalSchiff&label=Profile%20views&color=0e75b6&style=flat" alt="EyalSchiff" />
 </p>
 
-<h3 align="center">B.Sc. EE Student @ Bar-Ilan University | Hardware Design</h3>
+<h3 align="center">B.Sc. Electrical Engineering Graduate @ Bar-Ilan University | Hardware Design & Verification</h3>
 
-Welcome to my GitHub profile! I'm an Electrical Engineering student specializing in Nanoelectronics and Optics, focusing on logic design and hardware architecture. I use this space to build, experiment, and share my projects in RTL design and hardware engineering.
+Welcome to my GitHub profile! I'm an Electrical Engineering graduate specializing in Nanoelectronics, digital systems, and chip design. This space serves as my portfolio for building, optimizing, and sharing advanced RTL designs, verification environments, and physical implementation flows.
 
 ## 👨‍💼 About Me
 
-- 🎓 **Education:** 4th-year **B.Sc. in Electrical Engineering** at **Bar-Ilan University** (Expected graduation: 2026).
-- 💡 **Focus Areas:** Chip Design, Hardware Architecture, RTL (Verilog), and Logic Design.
-- 🚀 **Mission:** I'm curious, detail-driven, and highly motivated. I love solving complex structural problems—from basic logic design to optimizing hardware resource allocators and building full-scale digital architectures.
+- 🎓 **Education:** **B.Sc. in Electrical Engineering** from **Bar-Ilan University**.
+- 💡 **Focus Areas:** Chip Design, Hardware Architecture, RTL Design (Verilog / SystemVerilog), Design Verification (UVM/SystemVerilog), and Physical Design (RTL-to-GDSII).
+- 🚀 **Mission:** Detail-oriented, highly analytical, and deeply passionate about hardware acceleration. I thrive on breaking down complex structural challenges—from core digital architectures and hardware resource allocators to high-performance AI processing engines.
 
 ## 🛠️ Hardware & Development Tools
 
@@ -32,27 +32,28 @@ Welcome to my GitHub profile! I'm an Electrical Engineering student specializing
   <a href="https://www.linux.org/" target="_blank" rel="noreferrer"> 
     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="Linux" width="40" height="40"/> 
   </a> 
-  <img src="https://img.shields.io/badge/Verilog-000000?style=for-the-badge&logo=si-five&logoColor=white" alt="Verilog" height="40"/>
-  <img src="https://img.shields.io/badge/Cadence_Virtuoso-E31837?style=for-the-badge&logo=cadence&logoColor=white" alt="Cadence Virtuoso" height="40"/>
+  <img src="https://img.shields.io/badge/SystemVerilog-000000?style=for-the-badge&logo=si-five&logoColor=white" alt="SystemVerilog" height="40"/>
+  <img src="https://img.shields.io/badge/Cadence_Innovus_/_Virtuoso-E31837?style=for-the-badge&logo=cadence&logoColor=white" alt="Cadence Tools" height="40"/>
 </p>
 
 ## 📂 Featured Projects
 
 Here are the main repositories currently available on my profile:
 
-* **[B.Sc. Final Project: GC-eDRAM DRT Optimization (In Progress)](https://github.com/EyalSchiff/Final-Project):** My final year project focusing on optimizing Data Retention Time (DRT) for Gain-Cell embedded DRAM to improve energy efficiency and maximize memory availability by reducing refresh downtime. The project involves building Verilog behavioral models to emulate memory volatility and designing a smart, LUT-based adaptive refresh controller with multiplexing logic to significantly reduce static power consumption.
+* **[FPGA_Excellarator: HW/SW Co-Design CNN Accelerator](https://github.com/EyalSchiff/FPGA_Excellarator):** Design and rigorous cycle-accurate optimization of a full hardware acceleration subsystem for Convolutional Neural Networks (CNNs) tightly coupled with a custom RISC-V CPU. 
+    * **The Breakthrough:** Slashed end-to-end simulation latency from **over 1,000,000 cycles (pure software baseline)** down to exactly **4,029 clock cycles**—achieving a **>250x hardware speedup**.
+    * **Architectural Concept:** Re-architected a半-serial Output-Stationary baseline into a highly parallel **Input-Stationary / Broadcast-MAC Array** with 32 parallel 32-bit accumulators. Unified memory streaming to rigid 32-byte physical strides paired with high-speed software memory padding (`memset`) to eliminate FSM handshake bubbles and maximize 256-bit bus throughput.
 
+* **[B.Sc. Final Project: GC-eDRAM DRT Optimization](https://github.com/EyalSchiff/Final-Project):** My graduation project focusing on optimizing Data Retention Time (DRT) for Gain-Cell embedded DRAM to maximize memory availability and energy efficiency. Designed Verilog behavioral volatility models and implemented a smart, LUT-based adaptive refresh controller with multiplexing logic to dramatically reduce refresh downtime and static power leakage.
 
-* **[Self-Verilog-Projects](https://github.com/EyalSchiff/Self-verilog-projects):** A comprehensive collection of RTL designs and verification environments.
-    * **16-Entry Hardware Resource Allocator (Locker System):** A complex hierarchical system designed and implemented from the ground up, integrating fundamental building blocks (SR flip-flops, muxes, encoders) into a fully functional 16-bit architecture.
-    * **FIFO8 - Structural vs. Behavioral Equivalence:** A 64-bit wide, 8-entry synchronous FIFO buffer implementation. Demonstrates advanced verification by ensuring 100% bit-accurate logical equivalence between behavioral and gate-level structural models.
+* **[Self-Verilog-Projects](https://github.com/EyalSchiff/Self-verilog-projects):** A comprehensive collection of structural RTL designs and custom verification environments.
+    * **16-Entry Hardware Resource Allocator (Locker System):** Implemented a state-dependent, hierarchical resource allocator from scratch, integrating SR flip-flops, encoders, and multi-stage muxes under strict priorities where reset overrides simultaneous operations.
+    * **FIFO8 Buffer Verification:** A synchronous 64-bit wide, 8-entry FIFO. Demonstrates equivalence verification by checking 100% bit-accurate logical matching between behavioral dataflows and gate-level structural models.
 
-* **[RISCV-RTL2GDS: Physical Design Implementation](https://github.com/EyalSchiff/RISCV-RTL2GDS):** A complete RTL-to-GDSII Physical Design (PnR) flow implementation of a **Low-Power RISC-V SoC** core using **Cadence Innovus (TSMC 65nm)**.
-    * **The Flow:** Executed the full physical implementation cycle, including Floorplanning, Power Planning (Rings & Stripes), Standard Cell Placement, Clock Tree Synthesis (CTS), and Detailed Routing.
-    * **Signoff & Optimization:** Focused on Post-Route timing closure (Setup/Hold) and physical verification. Achieved a clean signoff with **zero DRC/Connectivity violations** and successful timing closure for the finalized layout.
-
-*(More projects and architectural explorations will be added soon!)*
+* **[RISCV-RTL2GDS: Physical Design Implementation](https://github.com/EyalSchiff/RISCV-RTL2GDS):** A complete RTL-to-GDSII Physical Design flow of a low-power RISC-V SoC core utilizing **Cadence Innovus** and **TSMC 65nm** library cells.
+    * **The Flow:** Executed the entire PnR implementation lifecycle: Floorplanning, Power Planning (Rings & Stripes), Cell Placement, Clock Tree Synthesis (CTS), and Detailed Routing.
+    * **Signoff:** Closed post-route timing (Setup/Hold slack optimization) and successfully cleared physical signoff with **zero DRC, antenna, or connectivity violations**.
 
 ## 🤝 Let's Connect
 
-I'm always open to discussing technology, chip design, and hardware architecture. Feel free to reach out to me through [LinkedIn](https://www.linkedin.com/in/eyal-schiff-094694307/).
+I am actively looking for opportunities in **Digital Design, Design Verification, and Physical Design**. I'm always eager to talk chip design, hardware architectures, or microelectronics—let's connect on [LinkedIn](https://www.linkedin.com/in/eyal-schiff-094694307/)!
